@@ -10,10 +10,10 @@
     <!--Firebase CDN-->
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <!--jQuery CDN-->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!--Javascript Link-->
-    <script type = "text/javascript" src = "assets/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Moment.js Reference -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  
 </head>
 <body>
     <div class="container">
@@ -85,6 +85,13 @@
                             <td>05:28PM</td>
                             <td>3</td>
                         </tr>
+                        <tr>
+                            <td id="train-display"></td>
+                            <td id="destination-display"></td>
+                            <td id="frequency-display"></td>
+                            <td id="next-arrival-display"></td>
+                            <td id="minutes-away"></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -110,9 +117,12 @@
                                 <label for="frequency-input">Frequency(min)</label>
                                 <input type="text" class="form-control" id="frequency-input">
                             </div>
-                        <button type="submit" class="btn btn-primary" id = "add-train">Submit</button>
+                        <button type="submit" class="btn btn-primary" id ="add-train">Submit</button>
                     </form>
                 </div>
             </div>
+  <!--Javascript Link-->
+  <script type = "text/javascript" src = "assets/javascript.js"></script>            
 </body>
+
 </html>
